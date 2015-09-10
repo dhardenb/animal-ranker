@@ -1,0 +1,20 @@
+<template name="animals">
+    <div class="jumbotron">
+        <h1 class="text-center">Rank your favorite animals!</h1>
+    </div>
+    <div>
+        <div id="animals">
+            {{#each animals}}
+                {{> animal}}
+            {{else}}
+            <h4>
+                You haven't added any favorite animals, click the Add button!
+            </h4>
+            {{/each}}
+        </div>
+        <p></p>
+        <div class="pull-left">
+            <a href="#" id="add" class="btn btn-success">Add New Animal</a>
+        </div>
+    </div>
+</template>
